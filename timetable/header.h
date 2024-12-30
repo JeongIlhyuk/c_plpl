@@ -14,6 +14,6 @@ const int daysNum = 5;
 const string dayNames[daysNum] = {"MON", "TUE", "WED", "THU", "FRI"};
 
 bool showCurriculum();
-bool showGrade();
+bool showPoorGrade();
 
 #endif

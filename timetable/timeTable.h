@@ -6,7 +6,7 @@
 class TimeTable{
 
     private:
-        const int grade;
+        const char grade;
         const string semester;
         const int periodsNum;
         const int periodMinute;
@@ -15,7 +15,7 @@ class TimeTable{
         bool showCells() const;
 
     public:
-        TimeTable(const int g, const string s)
+        TimeTable(const char g, const string s)
             :grade(g), semester(s), periodsNum(s == "Summer" || s == "Winter" ? hoursNum : hoursNum * 2), periodMinute(s == "Summer" || s == "Winter" ? 60 : 30)
         {
         };
